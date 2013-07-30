@@ -1,0 +1,50 @@
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/_MainLayoutPage.cshtml";
+}
+
+<link href="~/Contents/main.css" rel="stylesheet" />
+<div class="homePageLayout">
+    <div class="homeLeftPanel">
+        @Html.Partial("CatagoriesView")
+        @Html.Partial("ShopByPriceView")
+        @Html.Partial("ShopeByBrandView")
+        @*LeftSection*@
+        @*<a href="~/Views/Share/CatagoriesView.cshtml">~/Views/Share/CatagoriesView.cshtml</a>*@
+    </div>
+    <div class="homeRightPanel">
+        <div class="homeUpperSection">
+            <div class="homeUpperLeftSection">
+                UpperSection Left
+            </div>
+            <div class="homeUpperRightSection">
+                <div class="gifting">
+                    Gifting
+                </div>
+                <div class="shipping">
+                    Shipping
+                    @*@DateTime.Now.ToString()*@
+                </div>
+            </div>
+        </div>
+        <div class="homeLowerSection">
+            <div class="lowerSectionHead">
+                Feature Product
+            </div>
+            <div class="product_row">
+                <div class="product_row_col">
+                    col1
+                </div>
+                <div class="product_row_col">
+                    col2
+                </div>
+                <div class="product_row_col">
+                    col3
+                </div>
+                <div class="product_row_col">
+                    col4
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
